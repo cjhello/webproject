@@ -1,0 +1,46 @@
+环境变量：
+JAVA_TOOL_OPTIONS
+-Dfile.encoding=UTF-8
+
+pom.xml
+<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>2.10.4</version>
+				<configuration>
+					<aggregate>true</aggregate>
+					<tags>
+						<tag>
+							<name>创建人</name>
+							<placement>a</placement>
+							<head>创建人</head>
+						</tag>
+						<tag>
+							<name>创建时间</name>
+							<placement>a</placement>
+							<head>创建时间</head>
+						</tag>
+						<tag>
+							<name>修改人和其它信息</name>
+							<placement>a</placement>
+							<head>修改人和其它信息</head>
+						</tag>
+						<tag>
+							<name>描述</name>
+							<placement>a</placement>
+							<head>描述</head>
+						</tag>
+					</tags>
+					<charset>UTF-8</charset>
+					<encoding>UTF-8</encoding>
+					<docencoding>UTF-8</docencoding>
+				</configuration>
+				<executions>
+					<execution>
+						<id>attach-javadocs</id>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
