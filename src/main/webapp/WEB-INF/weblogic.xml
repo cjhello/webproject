@@ -5,6 +5,11 @@
     
     <container-descriptor>
          <show-archived-real-path-enabled>true</show-archived-real-path-enabled>
+         <!--  <prefer-application-packages>
+            <package-name>javax.persistence.*</package-name>
+            <package-name>javassist</package-name>
+            <package-name>org.slf4j</package-name>
+        </prefer-application-packages> -->
          <prefer-web-inf-classes>true</prefer-web-inf-classes> <!-- 优先使用Web应用里加载的类 -->
          <servlet-reload-check-secs>5</servlet-reload-check-secs> <!-- 每隔1秒检查servlet是否被修改并需要重新编译 -->
     </container-descriptor>
